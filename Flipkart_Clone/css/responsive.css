@@ -1,0 +1,23 @@
+/* detect minimum width of the screen below which responsiveness becomes bad then set that as priority*/
+@media screen and (max-width:1000px){
+    nav{
+        flex-direction: column;
+    }
+    nav ul li{
+        margin-left: 5vw;
+    }
+    .logo{
+        justify-content: center;
+        margin-top: 1vh;
+    }
+    #searchbox{
+        width: 60vw;
+        height: 3.5vh;
+        border-radius: 5px;
+        margin-left: 5vw;
+    }
+    .carousel{
+        width: 90vw;
+        height: 20vh;
+    }
+}

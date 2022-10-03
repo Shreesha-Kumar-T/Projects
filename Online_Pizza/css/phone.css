@@ -1,0 +1,90 @@
+@media screen and (max-width:990px){
+#navbar{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    min-width: 400px;
+}
+#navbar ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+#navbar ul li a{
+    font-size:0.9rem;
+}
+#home{
+    height: 150% !important;
+    /* padding: 43px 200px; */
+}
+#home::before{
+    height: 120% !important;
+    min-width: 400px;
+}
+/* optimization for above 400px i.e S8, A51/A71 etc */
+@media screen and (min-width:400px){
+    #home::before{
+        height: 90% !important;
+        min-width: 400px;
+    }
+}
+#home p{
+    min-width: 380px;
+    text-align: justify;
+    font-family: 'Bree Serif', serif;
+}
+#services-container{
+    min-width: 400px; 
+    padding-top:70%;
+}
+#services{
+    display:flex;
+    flex-direction: column;
+}
+.box img{
+    display: block;
+    max-width:100%;
+}
+#client-section{
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    min-width: 400px;
+}
+#clients{
+    display: flex;
+    flex-wrap: wrap;
+}
+#contact::before{
+    min-width: 400px;
+}
+footer{
+    min-width: 400px;
+}
+
+/*utility class*/
+.h-primary{
+    font-size:1.8rem !important;
+    padding: 8px;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+.h-secondary{
+    font-size:1.4rem !important;
+    padding: 5px;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+.h-tertiary{
+    font-size:1rem !important;
+    padding: 5px;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+.btn{
+    width: 100px;
+    margin-top: 40px !important;
+    padding:3px 10px !important;
+    font-size: 0.8rem !important;
+    border-radius: 6px !important;
+}
+}
